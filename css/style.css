@@ -7,20 +7,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* Comienza el Home */
 /* Home -  Header */
-.header {
+.navbar {
     background-color:#d5ecfa;
-    display: flex;
-    position: sticky;
-    top: 0;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 10;
-    width: 100%;
 }
-.logo__estandar img {
-    width: 50%;
-    height: 50%;
-    padding: 10px 0px;
+.navbar-brand img {
+    width: 7em;
+    height: 7em;
 }
 .header__nav {
     display: flex;
@@ -30,7 +22,9 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     text-align: center;
+    margin-bottom: 0px;
 }
 .header__nav ul li {
     font-size: 1.05em;
@@ -47,34 +41,46 @@ h1, h2, h3, h4, h5, h6 {
 .header__nav ul li a:hover {
     color:#217c92;
 }
-/* Home - Imagen de fondo */
-.fondo-home {
-    background-image: linear-gradient(#00000080, #00000080), url(../img/fondo.jpg);
-    background-size: cover;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+.navbar.responsive {
+    display: none;
 }
-.fondo-home__slogan {
-    text-transform: uppercase;
-    color:#ffffff;
-    font-size: 3.5em;
+.offcanvas {
+    background-color:#d5ecfa;
+}
+.offcanvas-title {
+    font-size: 2em;
+}
+.nav-item {
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    padding: 0px 30px;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    line-height: 50px;
+    color: #1b4550;
+}
+.nav-link.active {
+    color:#1b4550;
+}
+/* Home - Imagen de fondo */
+
+.carousel {
+    background-image: linear-gradient(black, black);
+    margin-bottom: 200px;
+}
+.carousel-caption h5 {
+    font-size: 4em;
+    text-transform: uppercase;
 }
 .home-contenido-principal {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 5%;
 }
 /* Home - Ingeniería y Diseño */
 .home-ing-y-diseño {
     display: flex;
-    margin: 100px 0px;
-    padding: 0px 30px;
+    margin-bottom: 200px;
+    padding: 0px 70px;
 }
 .home-ing-y-diseño__img {
     width: 100%;
@@ -84,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
 }
 .home-ing-y-diseño__container {
-    width: 20%;
+    width: 30%;
     background-color:#1f1f1f;
     display: flex;
     flex-direction: column;
@@ -103,11 +109,11 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.5em;
     color: #faebd7;
 }
-.btn {
+.buttom {
     padding: 20px 0px;
     margin-top: 10px;
 }
-.btn a {
+.buttom a {
     text-decoration: none;
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
@@ -118,15 +124,17 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px 30px;
     text-align: center;
     text-transform: uppercase;
+    box-shadow: 4px 4px 4px #303030;
 }
-.btn a:hover {
-    background-color:#2c6775;
+.buttom a:hover {
+    transform: scale(1.03, 1.03);
+    transition: all .5s;
 }
 .home-contenido-adicional {
     display: flex;
     justify-content: space-between;
-    padding: 0px 30px;
-    margin-bottom: 20px;
+    padding: 0px 70px;
+    margin-bottom: 150px;
 }
 .home-contenido-adicional__info {
     display: flex;
@@ -153,8 +161,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Home - Obras */
 .home-obras {
     display: flex;
-    margin-bottom: 75px;
-    padding: 0px 30px;
+    margin-bottom: 200px;
+    padding: 0px 70px;
 }
 .home-obras__img {
     width: 100%;
@@ -184,156 +192,42 @@ h1, h2, h3, h4, h5, h6 {
     color:#faebd7;
 }
 /* Home - Footer */
+footer {
+    background-color:#1b4550;
+}
 .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     background-color:#1f1f1f;
     padding-bottom: 25px;
 }
-.footer__info {
-    display: flex;
-    justify-content: space-around;
-}
-.footer__logo {
+.logo__icono {
+    font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     font-size: 6em;
-    padding: 25px;
-    text-align: center;
-    color:#487a99;
+    padding: 25px 0px;
+    color:#1f1f1f;
 }
-.info h6 {
+.info .info__seccion {
     font-size: 1.4em;
     padding-bottom: 10px;
-    color:#487a99;
-    font-weight: 300;
+    color:#1f1f1f;
+    font-weight: 500;
     text-transform: uppercase;
 }
 .info li {
     list-style: none;
-    color: #faebd7;
+    color:#1f1f1f;
     padding: 10px 0px;
     font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
     font-weight: 300;
     
 }
-.info li a {
+.info ul li a {
     text-decoration: none;
     color: #faebd7;
 }
-.info li a:hover {
+.info ul li a:hover {
     color: #2bbde2;
-}
-@media (min-width: 900px) and (max-width: 1023px) {
-    .header__nav li a {
-        font-size: .8em;
-    }
-    .fondo-home__slogan {
-        font-size: 3em;
-    }
-    .home-ing-y-diseño__descripcion {
-        font-size: 1.3em;
-    }
-    .btn a {
-        font-size: .9em;
-    }
-    .info__titulo {
-        font-size: 1.3em;
-    }
-    .info__descripcion {
-        font-size: .9em;
-    }
-    .home-obras__descripcion {
-        font-size: 1.3em;
-    }
-    .footer__logo {
-        font-size: 5em;
-    }
-    .info h6 {
-        font-size: 1.2em;
-    }
-    .info li {
-        font-size: .9em;
-    }
-}
-@media screen and (max-width: 899px) {
-    .header {
-        display: flex;
-        justify-content: space-between;
-    }
-    .header__nav {
-        display: none;
-    }
-    .fondo-home__slogan {
-        font-size: 2.5em;
-    }
-    .home-ing-y-diseño {
-        display: flex;
-        flex-direction: column;
-    }
-    .home-ing-y-diseño__container {
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    .home-ing-y-diseño__descripcion {
-        font-size: 1.3em;
-    }
-    .btn a {
-        font-size: .9em;
-    }
-    .home-contenido-adicional {
-        display: flex;
-        flex-direction: column;
-    }
-    .home-contenido-adicional__info {
-        width: 90%;
-        padding: 20px;
-    }
-    .info__titulo {
-        font-size: 1.3em;
-    }
-    .info__descripcion {
-        font-size: .9em;
-    }
-    .home-obras {
-        display: flex;
-        flex-direction: column;
-    }
-    .home-obras__container {
-        width: 90%;
-    }
-    .home-obras__descripcion {
-        font-size: 1.3em;
-    }
-    .footer__logo {
-        font-size: 5em;
-    }
-    .info h6 {
-        font-size: 1em;
-    }
-    .info li {
-        font-size: .8em;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    .fondo-home {
-        background-size: cover;
-        background-position: center;
-    }
-    .logo__estandar img {
-        width: 40%;
-        height: 40%;
-    }
-    .footer__info {
-        display: flex;
-        flex-direction: column;
-        padding-left: 50px;
-    }
-
 }
 /* Comienza Ingenieria y Diseño */
 .seccion {
@@ -376,74 +270,6 @@ h1, h2, h3, h4, h5, h6 {
     text-align: left;
     padding-right: 100px;
 }
-@media (min-width: 900px) and (max-width: 1023px) {
-    .header__nav li a {
-        font-size: .8em;
-    }
-    .ing-y-diseño__texto {
-        font-size: .9em;
-    }
-}
-@media screen and (max-width: 899px) {
-    .seccion {
-        padding: 50px;
-    }
-    .ing-y-diseño {
-        display: grid;
-        grid-template-columns: auto;
-        grid-row: repeat(10, auto);
-    }
-    .ing-y-diseño img:nth-child(1) {
-        grid-column: 1;
-        grid-row: 1;
-    }
-    .ing-y-diseño .ing-y-diseño__info:nth-child(2) {
-        grid-column: 1;
-        grid-row: 2;
-    }
-    .ing-y-diseño .ing-y-diseño__info:nth-child(3) {
-        grid-column: 1;
-        grid-row: 4;
-    }
-    .ing-y-diseño img:nth-child(4) {
-        grid-column: 1;
-        grid-row: 3;
-    }
-    .ing-y-diseño img:nth-child(5) {
-        grid-column: 1;
-        grid-row: 5;
-    }
-    .ing-y-diseño .ing-y-diseño__info:nth-child(6) {
-        grid-column: 1;
-        grid-row: 6;
-    }
-    .ing-y-diseño .ing-y-diseño__info:nth-child(7) {
-        grid-column: 1;
-        grid-row: 8;
-    }
-    .ing-y-diseño img:nth-child(8) {
-        grid-column: 1;
-        grid-row: 7;
-    }
-    .ing-y-diseño img:nth-child(9) {
-        grid-column: 1;
-        grid-row: 9;
-    }
-    .ing-y-diseño .ing-y-diseño__info:nth-child(10) {
-        grid-column: 1;
-        grid-row: 10;
-    }
-    .seccion__nombre {
-        font-size: 1.5em;
-    }
-    .ing-y-diseño__titulo {
-        font-size: 1.75em;
-    }
-    .ing-y-diseño__texto {
-        font-size: 1em;
-        padding-right: 0px;
-    }
-}
 /* Comienza Obras */
 .obras-galeria {
     background-color:#1f1f1f;
@@ -463,13 +289,16 @@ h1, h2, h3, h4, h5, h6 {
     object-fit: cover;
     width: 75%;
 }
+.obras-galeria__obra img:hover {
+    transition: .7s;
+    transform: scale(1.01, 1.01);
+}
 .obra__nombre {
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     color:#2c6775;
     font-size: 2.3em;
     font-weight: 500;
-    padding-left: 20px;
     padding-top: 20px;
 }
 .obra__direccion {
@@ -477,20 +306,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.75em;
     color:#faebd7;
     padding-bottom: 20px;
-}
-@media screen and (max-width: 899px) {
-    .obras-galeria {
-        margin: 100px 0px; 
-    }
-    .obras-galeria__obra img {
-        width: 100%;
-    }
-    .obra__nombre {
-        font-size: 1.5em;
-    }
-    .obra__direccion {
-        font-size: 1.2em;
-    }
 }
 /* Comienza Sobre Nosotros */
 /* Sobre Nosotros - Quiénes Somos */
@@ -581,50 +396,6 @@ h1, h2, h3, h4, h5, h6 {
     grid-column: 2/4;
     grid-row: 3/4;
 }
-@media screen and (max-width: 899px){
-    .sobre-nosotros {
-        display: flex;
-        flex-direction: column;
-        padding: 0px;
-    }
-    .sobre-nosotros__img img {
-        width: 58%;
-        height: 55%;
-        padding: 0px 20px;
-    }
-    .sobre-nosotros__texto {
-        padding-bottom: 50px;
-    }
-    .texto__descripcion {
-        font-size: .9em;
-    }
-    .sobre-nosotros-pq-elegirnos {
-        display: flex;
-        flex-direction: column;
-        padding: 0px;
-    }
-    .sobre-nosotros-pq-elegirnos__img {
-        display: flex;
-        justify-content: right;
-    }
-    .sobre-nosotros-pq-elegirnos__img img {
-        width: 60%;
-        height: 55%;
-        padding: 0px 20px;
-    }
-    .sobre-nosotros-pq-elegirnos__texto {
-        padding-top: 50px;
-    }
-    .sobre-nosotros-slogan {
-        padding: 0px 10px;
-    }
-    .sobre-nosotros-slogan__texto {
-        font-size: 1.8em;
-    }
-    .sobre-nosotros-galeria {
-        margin: 50px 15px;
-    }
-}
 /* Comienza Contacto */
 /* Contacto - Formulario */
 .contacto-main {
@@ -704,11 +475,11 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px;
     min-height: 250px;
 }
-.btn input {
+.buttom input {
     text-decoration: none;
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: lighter;
     display: inline;
     background-color:#1b4550;
@@ -717,13 +488,54 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     border: none;
 }
-.btn input:hover {
+.buttom input:hover {
     background-color:#1f6172;
+    transform: scale(1.1, 1.1);
+    transition: all .5s;
 }
 .contacto-mapa iframe {
     width: 100%;
 }
 @media (min-width: 900px) and (max-width: 1023px) {
+    /* Home */
+    .header__nav li a {
+        font-size: .8em;
+    }
+    .fondo-home__slogan {
+        font-size: 3em;
+    }
+    .home-ing-y-diseño__descripcion {
+        font-size: 1.3em;
+    }
+    .btn a {
+        font-size: .9em;
+    }
+    .info__titulo {
+        font-size: 1.3em;
+    }
+    .info__descripcion {
+        font-size: .9em;
+    }
+    .home-obras__descripcion {
+        font-size: 1.3em;
+    }
+    .logo__icono {
+        font-size: 5em;
+    }
+    .info h6 {
+        font-size: 1.2em;
+    }
+    .info li {
+        font-size: .9em;
+    }
+    /* Ingeniería y Diseño */
+    .header__nav li a {
+        font-size: .8em;
+    }
+    .ing-y-diseño__texto {
+        font-size: .9em;
+    }
+    /* Contacto */
     .datos-contacto__info__titulo {
         font-size: 1em;
     }
@@ -736,11 +548,198 @@ h1, h2, h3, h4, h5, h6 {
     .form__texto {
         font-size: .8em;
     }
-    .btn input {
+    .buttom input {
         font-size: .9em;
     }
 }
 @media screen and (max-width: 899px) {
+    .navbar.estandar {
+        display: none;
+    }
+    .navbar.responsive {
+        display: block;
+    }
+    .carousel {
+        margin-top: 140px;
+    }
+    .fondo-home__slogan {
+        font-size: 2.5em;
+    }
+    .home-ing-y-diseño {
+        display: flex;
+        flex-direction: column;
+    }
+    .home-ing-y-diseño__container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .home-ing-y-diseño__descripcion {
+        font-size: 1.3em;
+    }
+    .buttom a {
+        font-size: .9em;
+    }
+    .home-contenido-adicional {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-contenido-adicional__info {
+        width: 100%;
+        padding: 15px;
+    }
+    .info__titulo {
+        font-size: 1.3em;
+    }
+    .info__descripcion {
+        font-size: .9em;
+    }
+    .home-obras {
+        display: flex;
+        flex-direction: column;
+    }
+    .home-obras__container {
+        width: 100%;
+    }
+    .home-obras__descripcion {
+        font-size: 1.3em;
+    }
+    .logo__icono {
+        font-size: 4.5em;
+    }
+    .info h6 {
+        font-size: 1em;
+    }
+    .info li {
+        font-size: .8em;
+    }
+    /* Ingeniería y Diseño */
+    .seccion {
+        padding: 50px;
+        margin-top: 170px;
+    }
+    .ing-y-diseño {
+        display: grid;
+        grid-template-columns: auto;
+        grid-row: repeat(10, auto);
+    }
+    .ing-y-diseño img:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .ing-y-diseño .ing-y-diseño__info:nth-child(2) {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .ing-y-diseño .ing-y-diseño__info:nth-child(3) {
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .ing-y-diseño img:nth-child(4) {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .ing-y-diseño img:nth-child(5) {
+        grid-column: 1;
+        grid-row: 5;
+    }
+    .ing-y-diseño .ing-y-diseño__info:nth-child(6) {
+        grid-column: 1;
+        grid-row: 6;
+    }
+    .ing-y-diseño .ing-y-diseño__info:nth-child(7) {
+        grid-column: 1;
+        grid-row: 8;
+    }
+    .ing-y-diseño img:nth-child(8) {
+        grid-column: 1;
+        grid-row: 7;
+    }
+    .ing-y-diseño img:nth-child(9) {
+        grid-column: 1;
+        grid-row: 9;
+    }
+    .ing-y-diseño .ing-y-diseño__info:nth-child(10) {
+        grid-column: 1;
+        grid-row: 10;
+    }
+    .seccion__nombre {
+        font-size: 1.5em;
+    }
+    .ing-y-diseño__titulo {
+        font-size: 1.75em;
+    }
+    .ing-y-diseño__texto {
+        font-size: 1em;
+        padding-right: 0px;
+    }
+    /* Obras */
+    .obras-galeria {
+        margin: 100px 0px; 
+    }
+    .obras-galeria__obra {
+        padding: 10px;
+        text-align: center;
+    }
+    .obras-galeria__obra img {
+        width: 100%;
+    }
+    .obra__nombre {
+        font-size: 1.8em;
+    }
+    .obra__direccion {
+        font-size: 1.2em;
+    }
+    /* Sobre Nosotros */
+    .sobre-nosotros {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+    .sobre-nosotros__img img {
+        width: 58%;
+        height: 55%;
+        padding: 0px 10px;
+    }
+    .sobre-nosotros__texto {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 50px;
+    }
+    .texto__descripcion {
+        font-size: .9em;
+    }
+    .sobre-nosotros-pq-elegirnos {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+    .sobre-nosotros-pq-elegirnos__img {
+        display: flex;
+        justify-content: right;
+    }
+    .sobre-nosotros-pq-elegirnos__img img {
+        width: 60%;
+        height: 55%;
+        padding: 0px 10px;
+    }
+    .sobre-nosotros-pq-elegirnos__texto {
+        padding-top: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .sobre-nosotros-slogan {
+        padding: 0px 10px;
+    }
+    .sobre-nosotros-slogan__texto {
+        font-size: 1.8em;
+    }
+    .sobre-nosotros-galeria {
+        margin: 50px 15px;
+    }
+    /* Contacto */
     .contacto-main {
         display: flex;
         flex-direction: column;
@@ -763,7 +762,47 @@ h1, h2, h3, h4, h5, h6 {
     .form__texto {
         font-size: .8em;
     }
-    .btn input {
+    .buttom input {
         font-size: .8em;
+    }
+}
+@media screen and (max-width: 650px) {
+    .carousel {
+        margin-bottom: 100px;
+    }
+    .navbar-brand img {
+        width: 6em;
+        height: 6em;
+    }
+    .home-ing-y-diseño {
+        padding: 10px;
+        margin-bottom: 100px;
+    }
+    .home-contenido-adicional {
+        padding: 0px;
+        margin-bottom: 75px;
+    }
+    .home-obras {
+        padding: 10px;
+        margin-bottom: 100px;
+    }
+    .footer__info {
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+    }
+    /* Ingeniería y Diseño */
+    .seccion {
+        margin-top: 140px;
+    }
+    .ing-y-diseño__info {
+        margin: 50px 10px;
+    }
+    /* Contacto */
+    .contacto-main__datos-contacto {
+        padding: 30px 10px;
+    }
+    .contacto-main__container-form {
+        padding: 30px 10px;
     }
 }
