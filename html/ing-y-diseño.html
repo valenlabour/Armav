@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Armav - Ingeniería y Diseño</title>
+    <title>Armav S.A - Ingeniería y Diseño</title>
     <link rel="shortcut icon" href="../img/logo-icono.png">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"> <!-- Poppins light 300, regular 400 y medium 500 -->
     <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet"> <!-- Forum regular 400 -->
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet"> <!-- League Gothic regular 400 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!-- Animate.css -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- Aos -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> <!-- Bootstrap -->
@@ -16,10 +17,10 @@
 <body>
     <!--Header-->
     <header>
-        <nav class="navbar navbar-light estandar">
+        <nav class="navbar navbar-light fixed-top estandar">
             <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">
-                <img src="../img/logo.png" alt="Armav"  class="d-inline-block align-text-top">
+                <img src="../img/armav1.png" alt="Armav"  class="d-inline-block align-text-top">
             </a>
             <div class="header__nav">
                 <ul>
@@ -35,32 +36,32 @@
         <nav class="navbar navbar-light fixed-top responsive">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
-                  <img src="../img/logo.png" alt="Armav">
+                  <img src="../img/armav.png" alt="Armav">
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ARMAV</h5>
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Armav S.A</h5>
                   <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                      <a aria-current="page" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" href="../html/ing-y-diseño.html">Ingeniería y Diseño</a>
+                      <a class="active" href="../html/ing-y-diseño.html">Ingeniería y Diseño</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../html/obras.html">Obras</a>
+                        <a href="../html/obras.html">Obras</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../html/sobre-nosotros.html">Sobre Nosotros</a>
+                        <a href="../html/sobre-nosotros.html">Sobre Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../html/contacto.html">Contacto</a>
+                        <a href="../html/contacto.html">Contacto</a>
                     </li>
                   </ul>
                 </div>
@@ -74,36 +75,45 @@
             <h1 class="animate__animated animate__fadeInDown seccion__nombre">Ingeniería y Diseño</h1>
         </div>
         <main class="ing-y-diseño">
-            <img src="../img/ing-y-diseño-img1.jpg" alt="">
-            <div class="ing-y-diseño__info">
+            <img data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" src="../img/ing-y-diseño-img1.jpg">
+            <div data-aos="fade-up" class="ing-y-diseño__info">
                 <h2 class="animate__animated animate__animate__fadeInDown ing-y-diseño__titulo">La vista exclusiva de un edificio, su estilo único y distintivo, se aprecia en su diseño exterior</h2>
-                <p class="ing-y-diseño__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci aliquam sequi itaque ex quis! Vitae obcaecati pariatur vel repellendus inventore quae aliquam ratione soluta, nihil distinctio, voluptas, non a laudantium.</p>
+                <p class="ing-y-diseño__texto">Nuestros profesionales saben respetar la importancia de los requisitos arquitectónicos y técnicos. Ponen todo su conocimiento y experiencia para comprender el estilo y escuchar las necesidades del profesional; aportando soluciones tecnológicas, cuidando el medioambiente, combinando estética, rendimiento técnico, y proponiendo un sistema de mantenimiento que permita una óptima relación costo-beneficio a un producto que durará décadas.</p>
             </div>
-            <div class="ing-y-diseño__info">
+            <div data-aos="fade-up" class="ing-y-diseño__info">
                 <h2 class="ing-y-diseño__titulo">El Diseño</h2>
-                <p class="ing-y-diseño__texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint doloribus dolores aspernatur. Ab doloremque culpa saepe ducimus, nemo suscipit, corporis tempora aliquid nihil blanditiis illum, quas qui amet praesentium autem.</p>
+                <p class="ing-y-diseño__texto">Para el diseño de fachadas, promovemos la eficiencia en el uso de la energía, la conservación de la temperatura ambiente interior, aislación del ruido exterior. Las fachadas deben estar preparadas para soportar cargas de vientos normalizados así como las circunstancias externas particulares que puedan producirse. El Curtain Wall debe ser eficiente y permitir realizar el mantenimiento en forma accesible y económica.</p>
             </div>
-            <img src="../img/ing-y-diseño-img2.jpg" alt="">
-            <img src="../img/ing-y-diseño-img3.jpg" alt="">
-            <div class="ing-y-diseño__info">
+            <img data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" src="../img/ing-y-diseño-img2.jpg">
+            <img data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" src="../img/ing-y-diseño-img3.jpg">
+            <div data-aos="fade-up" class="ing-y-diseño__info">
                 <h2 class="ing-y-diseño__titulo">La Ingeniería</h2>
-                <p class="ing-y-diseño__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus beatae ut nemo. Nemo ipsum veniam, deleniti maxime ratione ad laboriosam molestiae, nulla officiis tempora quas aut ea voluptatem quo delectus!</p>
+                <p class="ing-y-diseño__texto">Con nuestros profesionales estamos en condiciones de brindar una solución a los requisitos estéticos, estructurales, térmicos y acústicos, aportando toda nuestra capacidad técnica, puesto que continuamente estamos incorporando nuevas tecnologías, y experiencia. Como proceso final se prueba su desempeño en simuladores.</p>
                 <div class="buttom">
                     <a href="#">Leer más sobre ensayos, prototipos y maquetas</a>
                 </div>
             </div>
-            <div class="ing-y-diseño__info">
+            <div data-aos="fade-up" class="ing-y-diseño__info">
                 <h2 class="ing-y-diseño__titulo">Entre la eficiencia y el valor</h2>
-                <p class="ing-y-diseño__texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam dolorem, praesentium temporibus nesciunt debitis dolor sunt nihil voluptate in tenetur fugiat deleniti architecto ducimus excepturi quaerat. Assumenda facilis est aspernatur!</p>
+                <p class="ing-y-diseño__texto">Una vez que el diseño cumpla con las expectativas y requisitos del profesional que nos contrata, nuestros Arquitectos, Ingenieros y Técnicos seleccionan el material más adecuado, optimizando los procesos de producción e instalación. Nuestro objetivo es ofrecerle el mejor valor para su inversión. Es por esto que desarrollamos manuales de calidad que le brindarán un servicio especial y diferenciador.</p>
                 <div class="buttom">
                     <a href="#">Leer más sobre fabricación y montaje</a>
                 </div>
             </div>
-            <img src="../img/ing-y-diseño-img4.jpg" alt="">
-            <img src="../img/ing-y-diseño-img5.jpg" alt="">
-            <div class="ing-y-diseño__info">
+            <img data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" src="../img/ing-y-diseño-img4.jpg">
+            <img data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" src="../img/ing-y-diseño-img5.jpg">
+            <div data-aos="fade-up" class="ing-y-diseño__info">
                 <h2 class="ing-y-diseño__titulo">Soluciones especiales en aluminio y vidrio de altas prestaciones</h2>
-                <p class="ing-y-diseño__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum tenetur nam dolor, porro, at est culpa neque illum quod, saepe sint. Eius alias voluptatum sapiente recusandae sequi praesentium ducimus tempore?</p>
+                <p class="ing-y-diseño__texto"><strong>Armav S.A</strong> brinda soluciones de diseño para Carpinterías Especiales en aluminio y vidrio de altas prestaciones y excelente desempeño en:
+                </p>
+                <ul>
+                  <li>Puertas y ventanas de rebatir</li>
+                  <li>Puertas y ventanas de rebatir</li>
+                  <li>Techos Vidriados</li>
+                  <li>Ventanas cinta (window walls)</li>
+                  <li>Ventanas corredizas de 2, 3, 4 hojas</li>
+                  <li>Entre otras</li>
+                </ul>
             </div>
         </main>
     <!--Footer-->
@@ -114,7 +124,7 @@
           <div class="row">
             <!--Grid column-->
             <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-              <h5 class="text-uppercase logo__icono">Armav</h5>
+              <h5 class="logo__icono">Armav S.A</h5>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
                 molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
@@ -177,13 +187,13 @@
         <!-- Copyright -->
         <div class="text-center p-3 footer">
           © 2022 Copyright:
-          <a class="text-white" href="https://mdbootstrap.com/">Armav.com</a>
+          <a class="text-white" href="#">Armav.com</a>
         </div>
         <!-- Copyright -->
       </footer>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> <!-- Bootstrap JS -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- Animate.css JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- Aos JS -->
 <script> /* Initialize CSS */
     AOS.init();
 </script>

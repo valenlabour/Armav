@@ -4,21 +4,23 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Armav - Ingeniería y Construcción</title>
+        <title>Armav S.A - Ingeniería y Construcción</title>
         <link rel="shortcut icon" href="../img/logo-icono.png">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"> <!-- Poppins light 300, regular 400 y medium 500 -->
         <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet"> <!-- Forum regular 400 -->
+        <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet"> <!-- League Gothic regular 400 -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!-- Animate.css -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- Aos -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> <!-- Bootstrap -->
         <link rel="stylesheet" href="../css/style.css">
     </head>
 <body>
     <!--Header-->
     <header>
-        <nav class="navbar navbar-light estandar">
+        <nav class="navbar navbar-light fixed-top estandar">
             <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">
-                <img src="../img/logo.png" alt="Armav"  class="d-inline-block align-text-top">
+                <img src="../img/armav1.png" alt="Armav"  class="d-inline-block align-text-top">
             </a>
             <div class="header__nav">
                 <ul>
@@ -32,74 +34,61 @@
             </div>
         </nav>
         <nav class="navbar navbar-light fixed-top responsive">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                  <img src="../img/logo.png" alt="Armav">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ARMAV</h5>
-                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="../html/ing-y-diseño.html">Ingeniería y Diseño</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../html/obras.html">Obras</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../html/sobre-nosotros.html">Sobre Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../html/contacto.html">Contacto</a>
-                    </li>
-                  </ul>
-                </div>
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../img/armav.png" alt="Armav">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Armav S.A</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../html/ing-y-diseño.html">Ingeniería y Diseño</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="../html/obras.html">Obras</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="active" href="../html/sobre-nosotros.html">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="../html/contacto.html">Contacto</a>
+                  </li>
+                </ul>
               </div>
             </div>
-          </nav>
+          </div>
+        </nav>
     </header>
         <!--Nombre Sección-->
         <div class="seccion">
             <h1 class="animate__animated animate__fadeInDown seccion__nombre">Sobre Nosotros</h1>
         </div>
-    <main class="sobre-nosotros-main">   
-        <!-- Quiénes Somos -->
-        <div class="sobre-nosotros">
-            <div class="sobre-nosotros__texto">
-            <h2 class="texto__titulo">¿Quiénes somos?</h2>
-            <p class="texto__descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam excepturi perferendis repudiandae natus consequatur dolorum quidem dolores neque suscipit ullam debitis porro, ratione accusamus harum, ab voluptas nesciunt animi pariatur eveniet ipsum id ex reprehenderit temporibus tempora! Fuga dolorem vel, nostrum ex voluptatibus, expedita eaque eligendi quasi voluptatum ea omnis ipsum unde architecto? Saepe officiis maiores nobis recusandae reiciendis, delectus accusantium exercitationem nesciunt illum neque laborum inventore libero. Dolores, rem? Placeat sit voluptatem veritatis nesciunt aperiam recusandae. Provident quam cupiditate inventore doloribus aliquid quos est assumenda recusandae maxime quasi cum dolorem distinctio eaque illum vitae, vero, expedita, quod quibusdam ex dolores? Maiores temporibus ut autem perspiciatis expedita aspernatur quas doloremque delectus. </p>
-        </div>
-        <div class="sobre-nosotros__img">
-            <img src="../img/sobre-nosotros-img0.jpg">
-        </div>
-        </div>
-        <!-- Por qué Elegirnos -->
-        <div class="sobre-nosotros-pq-elegirnos">
-            <div class="sobre-nosotros-pq-elegirnos__img">
-                <img src="../img/sobre-nosotros-img1.jpg">
-            </div>
-            <div class="sobre-nosotros-pq-elegirnos__texto">
-                <h3 class="texto__titulo">¿Por qué elegirnos?</h3>
-                <p class="texto__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsa est perferendis, voluptatum nisi facilis ea consequuntur tempora placeat doloribus porro aspernatur incidunt nemo, libero nostrum ex iure quos repellat expedita consectetur? Magni dolores, quisquam exercitationem commodi ad rem laborum impedit, reiciendis, quo maiores animi aspernatur suscipit ratione placeat quas at facilis doloremque alias sint vero adipisci. Itaque aut sunt cum? Modi recusandae eaque facilis molestiae laboriosam omnis suscipit delectus libero magni ipsum, incidunt corrupti? Doloremque omnis velit corporis ullam reprehenderit aliquam quasi inventore saepe maiores aliquid, iste magnam quam numquam adipisci esse molestiae aut recusandae. Molestiae et molestias minus.
-                </p>
-            </div>
-        </div>
+    <main class="animate__animated animate__fadeIn sobre-nosotros-main">   
+      <div class="sobre-nosotros-img">
+        <img src="../img/sobre-nosotros-img.jpg" alt="Sobre nosotros">
+      </div>
+      <div>
+        <p class="sobre-nosotros-info">"Armav S.A es una empresa argentina integrada por diseñadores, planificadores, ingenieros, consultores y especialistas técnicos, que trabajan en todos los aspectos de los proyectos. Entendemos las obras como un proceso complejo, es por ello que acompañamos a nuestros clientes no solo en las etapas de diseño sino que también en las etapas de obra y fabricación, convirtiendo las ideas en realidad.</p>
+        <h2 class="sobre-nosotros-titulo">— Alfredo Belastegui</h2>
+      </div>
+
     </main>
     <!-- Slogan -->
-    <div class="sobre-nosotros-slogan">
-        <h4 class="sobre-nosotros-slogan__texto">Trabajamos para darte lo mejor <br><strong>_______________</strong></h4>
+    <div data-aos="fade-up" class="sobre-nosotros-slogan">
+        <h3 class="sobre-nosotros-slogan__texto">Trabajamos para darte lo mejor <br><strong>_______________</strong></h3>
     </div>
     <!--Galería-->
-    <div class="sobre-nosotros-galeria">
+    <div data-aos="fade-up" class="sobre-nosotros-galeria">
         <img src="../img/sobre-nosotros-galeria-img1.jpg">
         <img src="../img/sobre-nosotros-galeria-img2.jpg">
         <img src="../img/sobre-nosotros-galeria-img3.jpg">
@@ -114,7 +103,7 @@
           <div class="row">
             <!--Grid column-->
             <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-              <h5 class="text-uppercase logo__icono">Armav</h5>
+              <h4 class="logo__icono">Armav S.A</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
                 molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
@@ -175,13 +164,15 @@
         </div>
         <!-- Grid container -->
         <!-- Copyright -->
-        <div class="text-center p-3 footer">
-          © 2022 Copyright:
-          <a class="text-white" href="https://mdbootstrap.com/">Armav.com</a>
+        <div class="text-center p-3 footer">© 2022 Copyright:<a class="text-white" href="#">Armav.com</a>
         </div>
         <!-- Copyright -->
       </footer>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> <!-- Bootstrap JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- Aos JS -->
+<script> /* Initialize CSS */
+  AOS.init();
+</script>
 </body>
 </html>

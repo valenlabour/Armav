@@ -8,11 +8,11 @@ h1, h2, h3, h4, h5, h6 {
 /* Comienza el Home */
 /* Home -  Header */
 .navbar {
-    background-color:#d5ecfa;
+    background-color:#ffffff;
+    box-shadow: 0px 1.5px 1.5px #acaaaa;
 }
-.navbar-brand img {
-    width: 7em;
-    height: 7em;
+.navbar-toggler-icon {
+    font-size: 1em;
 }
 .header__nav {
     display: flex;
@@ -31,11 +31,11 @@ h1, h2, h3, h4, h5, h6 {
     list-style: none;
     padding: 20px;
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
 }
 .header__nav ul li a {
     text-decoration: none;
-    color:#1b4550;
+    color:#023C6D;
     text-transform: uppercase;
 }
 .header__nav ul li a:hover {
@@ -45,31 +45,49 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
 }
 .offcanvas {
-    background-color:#d5ecfa;
+    background-color:#ffffff;
+}
+.offcanvas-header {
+    box-shadow: 2px 2px 2px #acaaaa;
 }
 .offcanvas-title {
-    font-size: 2em;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 3em;
+    color: #023C6D;
 }
 .nav-item {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 1.3em;
     text-transform: uppercase;
-    line-height: 50px;
-    color: #1b4550;
+    line-height: 80px;
 }
-.nav-link.active {
-    color:#1b4550;
+.navbar-nav li a {
+    color:#487a99;
+    text-decoration: none;
+}
+.navbar-nav li .active {
+    color:#023C6D;
 }
 /* Home - Imagen de fondo */
-
-.carousel {
-    background-image: linear-gradient(black, black);
+.fondo-home {
+    background-image: linear-gradient(#00000080, #00000080), url(../img/home-fondo.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
     margin-bottom: 200px;
 }
-.carousel-caption h5 {
-    font-size: 4em;
+.fondo-home__slogan {
     text-transform: uppercase;
+    color:#ffffff;
+    letter-spacing: 3px;
+    font-size: 3.5em;
+    font-weight: 300;
+    padding: 0px 30px;
 }
 .home-contenido-principal {
     display: flex;
@@ -193,15 +211,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* Home - Footer */
 footer {
-    background-color:#1b4550;
+    background-color:#023C6D;
 }
 .footer {
     background-color:#1f1f1f;
     padding-bottom: 25px;
 }
 .logo__icono {
-    font-family: 'Poppins', sans-serif;
-    text-transform: uppercase;
+    font-family: 'League Gothic', sans-serif;
     font-size: 6em;
     padding: 25px 0px;
     color:#1f1f1f;
@@ -231,13 +248,14 @@ footer {
 }
 /* Comienza Ingenieria y Diseño */
 .seccion {
-    background-color:#1f1f1f;
+    background-color:#023C6D;
     height: auto;
-    padding: 80px;
+    padding: 60px;
     text-align: center;
+    margin-top: 95px;
 }
 .seccion__nombre {
-    color:#85a5ad;
+    color:#DFEAEF;
     font-weight: 500;
     font-family: 'Forum', cursive;
     text-transform: uppercase;
@@ -257,26 +275,32 @@ footer {
     margin: 100px 50px;
 }
 .ing-y-diseño__titulo {
-    font-size: 1.75em;
-    color:#1b4550;
+    font-size: 2em;
+    color:#023C6D;
 }
 .ing-y-diseño__texto {
     font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
     font-weight: lighter;
     padding-top: 30px;
-    padding-bottom: 30px;
     line-height: 2;
     text-align: left;
     padding-right: 100px;
 }
+.ing-y-diseño__info ul li {
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: lighter;
+    line-height: 2;
+    text-align: left;
+}
 /* Comienza Obras */
 .obras-galeria {
-    background-color:#1f1f1f;
+    background-color:#ffffff;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(5, 1fr);
-    margin: 100px 0px;
     padding-top: 50px;
 }
 .obras-galeria__obra {
@@ -304,52 +328,46 @@ footer {
 .obra__direccion {
     font-family: Barlow;
     font-size: 1.75em;
-    color:#faebd7;
+    color:#023C6D;
     padding-bottom: 20px;
 }
 /* Comienza Sobre Nosotros */
 /* Sobre Nosotros - Quiénes Somos */
-.sobre-nosotros {
-    display: flex;
-    justify-content: space-between;
-    margin: 100px 0px;
-    padding: 0px 30px;
-}
-.sobre-nosotros__texto {
-    background-color: #ffffff;
+.sobre-nosotros-main {
+    background-image: linear-gradient(
+        #000000d0, 
+        #000000bd
+      ), url(../img/sobre-nosotros-fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0px 30px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
 }
-.texto__titulo {
-    padding-bottom: 20px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.75em;
-    color:#1b4550;
+.sobre-nosotros-img img {
+    border-radius: 50%;
+    margin-top: 100px;
+    margin-bottom: 70px;
 }
-.texto__descripcion {
+.sobre-nosotros-info {
     font-family: 'Poppins', sans-serif;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: lighter;
     line-height: 2;
+    padding: 0px 100px;
+    margin-bottom: 70px;
+    color: #ffffff;
 }
-/* Sobre Nosotros - Por qué Elegirnos */
-.sobre-nosotros-pq-elegirnos {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 100px;
-    padding: 0px 30px;
-}
-.sobre-nosotros-pq-elegirnos__img img{
-    object-fit: cover;
-}
-.sobre-nosotros-pq-elegirnos__texto {
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0px 30px;
+.sobre-nosotros-titulo {
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    color:#ffffff;
+    margin-bottom: 70px;
 }
 /* Sobre Nosotros - Slogan */
 .sobre-nosotros-slogan {
@@ -360,7 +378,7 @@ footer {
     font-family: 'Forum', cursive;
     font-size: 3em;
     font-weight: 600;
-    color:#1b4550;
+    color:#023C6D;
     text-transform: uppercase;
 }
 /* Sobre Nosotros - Galería */
@@ -399,50 +417,73 @@ footer {
 /* Comienza Contacto */
 /* Contacto - Formulario */
 .contacto-main {
+    background-image: linear-gradient(
+        #00000080, 
+        #00000080
+      ), url(../img/contacto-fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:bottom;
     display: flex;
-    margin-top: 100px;
     margin-bottom: 50px;
     justify-content: space-evenly;
+    align-items: center;
 }
 .contacto-main__datos-contacto {
-    background-color:#ffffff;
+    padding: 30px;
     display: flex;
     flex-direction: column;
-    padding: 30px;
 }
 .datos-contacto__titulo {
     font-size: 2em;
     font-weight: 500;
-    color:#1b4550;
+    color:#ffffff;
     text-transform: uppercase;
+    padding-top: 30px;
 }
 .datos-contacto__info {
     padding: 30px 0px;
+    display: flex;
+    align-items: center;
+}
+.datos-contacto__info svg {
+    color: #ffffff;
 }
 .datos-contacto__info__titulo {
     font-size: 1.1em;
-    font-weight: 600;
-    color: #1b4550;
-    padding-bottom: 10px;
+    font-weight: 500;
+    color:#ffffff;
     text-transform: uppercase;
+    margin: 0px;
+    padding-left: 10px;
+}
+ul {
+    padding: 0px;
 }
 .datos-contacto__info__descripcion li {
     font-family: 'Forum', cursive;
     list-style: none;
     font-size: 1.8em;
-    color: #1f1f1f;
+    color:#ffffff;
     font-weight: 500;
 }
+.contacto-main__mapa {
+    width: 40%;
+}
+.contacto-main__mapa iframe {
+    width: 100%;
+}
 .contacto-main__container-form {
-    background-color: #ffffff;
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 0% 20%;
+    margin-bottom: 30px;
+    width: 100%;
 }
 .container-form__titulo {
     font-size: 2em;
     font-weight: 500;
-    color:#1b4550;
+    color:#023C6D;
     text-transform: uppercase;
     margin-bottom: 30px;
 }
@@ -458,9 +499,9 @@ footer {
 .form__titulo {
     font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
-    font-weight: 600;
+    font-weight: 500;
     padding-bottom: 5px;
-    color:#1b4550;
+    color:#023C6D;
     text-transform: uppercase;
 }
 .form__texto {
@@ -468,7 +509,7 @@ footer {
     font-size: 1em;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 1.5px;
-    border: 1px solid #c0b9b9;
+    border: 1px solid #023C6D;
 }
 .form__seccion textarea {
     resize: vertical;
@@ -482,19 +523,17 @@ footer {
     font-size: 1em;
     font-weight: lighter;
     display: inline;
-    background-color:#1b4550;
+    background-color:#159fc2;
     padding: 10px 30px;
     text-align: center;
     text-transform: uppercase;
     border: none;
+    box-shadow: 2px 2px 2px #303030;
 }
 .buttom input:hover {
-    background-color:#1f6172;
+    background-color:#159fc2;
     transform: scale(1.1, 1.1);
     transition: all .5s;
-}
-.contacto-mapa iframe {
-    width: 100%;
 }
 @media (min-width: 900px) and (max-width: 1023px) {
     /* Home */
@@ -559,9 +598,6 @@ footer {
     .navbar.responsive {
         display: block;
     }
-    .carousel {
-        margin-top: 140px;
-    }
     .fondo-home__slogan {
         font-size: 2.5em;
     }
@@ -618,7 +654,6 @@ footer {
     /* Ingeniería y Diseño */
     .seccion {
         padding: 50px;
-        margin-top: 170px;
     }
     .ing-y-diseño {
         display: grid;
@@ -676,9 +711,6 @@ footer {
         padding-right: 0px;
     }
     /* Obras */
-    .obras-galeria {
-        margin: 100px 0px; 
-    }
     .obras-galeria__obra {
         padding: 10px;
         text-align: center;
@@ -693,42 +725,9 @@ footer {
         font-size: 1.2em;
     }
     /* Sobre Nosotros */
-    .sobre-nosotros {
-        display: flex;
-        flex-direction: column;
-        padding: 0px;
-    }
-    .sobre-nosotros__img img {
-        width: 58%;
-        height: 55%;
-        padding: 0px 10px;
-    }
-    .sobre-nosotros__texto {
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 50px;
-    }
-    .texto__descripcion {
-        font-size: .9em;
-    }
-    .sobre-nosotros-pq-elegirnos {
-        display: flex;
-        flex-direction: column;
-        padding: 0px;
-    }
-    .sobre-nosotros-pq-elegirnos__img {
-        display: flex;
-        justify-content: right;
-    }
-    .sobre-nosotros-pq-elegirnos__img img {
-        width: 60%;
-        height: 55%;
-        padding: 0px 10px;
-    }
-    .sobre-nosotros-pq-elegirnos__texto {
-        padding-top: 50px;
-        padding-left: 10px;
-        padding-right: 10px;
+    .sobre-nosotros-info{
+        font-size: 1.1em;
+        padding: 0px 60px;
     }
     .sobre-nosotros-slogan {
         padding: 0px 10px;
@@ -753,6 +752,10 @@ footer {
     .datos-contacto__info__descripcion li {
         font-size: 1.4em;
     }
+    .contacto-main__mapa {
+        width: 60%;
+        margin-bottom: 50px;
+    }
     .container-form__titulo {
         font-size: 1.8em;
     }
@@ -767,12 +770,13 @@ footer {
     }
 }
 @media screen and (max-width: 650px) {
-    .carousel {
-        margin-bottom: 100px;
+    .offcanvas {
+        width: 100%;
     }
-    .navbar-brand img {
-        width: 6em;
-        height: 6em;
+    .fondo-home {
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 100px;
     }
     .home-ing-y-diseño {
         padding: 10px;
@@ -792,15 +796,25 @@ footer {
         padding-left: 30px;
     }
     /* Ingeniería y Diseño */
-    .seccion {
-        margin-top: 140px;
-    }
     .ing-y-diseño__info {
         margin: 50px 10px;
     }
+    /* Sobre Nosotros */
+    .sobre-nosotros-img img{
+        margin-bottom: 50px;
+    }
+    .sobre-nosotros-info{
+        padding: 0px;
+        font-size: 1em;
+        padding: 0 5px;
+        margin-bottom: 50px;
+    }
+    .sobre-nosotros-titulo {
+        font-size: 1.3em;
+    }
     /* Contacto */
-    .contacto-main__datos-contacto {
-        padding: 30px 10px;
+    .contacto-main__mapa {
+        width: 90%;
     }
     .contacto-main__container-form {
         padding: 30px 10px;
