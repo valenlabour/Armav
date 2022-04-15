@@ -247,6 +247,7 @@ footer {
     color: #2bbde2;
 }
 /* Comienza Ingenieria y Diseño */
+/* Ingeniería y Diseño - Sección */
 .seccion {
     background-color:#023C6D;
     height: auto;
@@ -261,6 +262,7 @@ footer {
     text-transform: uppercase;
     letter-spacing: 3px;
 }
+/* Ingeniería y Diseño - Galería */
 .ing-y-diseño {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -296,6 +298,7 @@ footer {
     text-align: left;
 }
 /* Comienza Obras */
+/* Obras - Galería */
 .obras-galeria {
     background-color:#ffffff;
     display: grid;
@@ -415,7 +418,7 @@ footer {
     grid-row: 3/4;
 }
 /* Comienza Contacto */
-/* Contacto - Formulario */
+/* Contacto - Datos Contacto */
 .contacto-main {
     background-image: linear-gradient(
         #00000080, 
@@ -467,12 +470,14 @@ ul {
     color:#ffffff;
     font-weight: 500;
 }
+/* Contacto - Mapa */
 .contacto-main__mapa {
     width: 40%;
 }
 .contacto-main__mapa iframe {
     width: 100%;
 }
+/* Contacto - Formulario Contacto */
 .contacto-main__container-form {
     display: flex;
     flex-direction: column;
@@ -535,6 +540,7 @@ ul {
     transform: scale(1.1, 1.1);
     transition: all .5s;
 }
+/* Diseño Responsive */
 @media (min-width: 900px) and (max-width: 1023px) {
     /* Home */
     .header__nav li a {
