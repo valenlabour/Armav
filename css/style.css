@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 .header__nav ul li {
     font-size: 1.05em;
     list-style: none;
-    padding: 20px;
+    padding: 15px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
