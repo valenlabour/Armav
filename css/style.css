@@ -34,7 +34,11 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
 }
 .header__nav ul li .active {
-    color: #1f1f1f;
+    color:#023C6D;
+    padding: 5px;
+    background-color:#DFEAEF;
+    border-radius: 4%;
+    font-weight: 500;
 }
 .header__nav ul li a {
     text-decoration: none;
@@ -42,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 .header__nav ul li a:hover {
-    color:#217c92;
+    color:#359ac9;
 }
 .navbar.responsive {
     display: none;
