@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Armav S.A - Ingeniería y Construcción</title>
-    <link rel="shortcut icon" href="img/armav-icono.png">
+    <meta name="description" content="Armav S.A es una empresa constructora argentina dedicada a la ingeniería y diseño.">
+    <meta name="keywords" content="Armav, S.A,ingeniería, construcción, diseño">
+    <link rel="shortcut icon" href="img/header/armav-icono.png">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"> <!-- Poppins light 300, regular 400 y medium 500 -->
     <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet"> <!-- Forum regular 400 -->
     <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet"> <!-- League Gothic regular 400 -->
@@ -13,59 +15,49 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- Aos -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> <!-- Bootstrap -->
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/normalize.css">
 </head>
 <body>
     <!--Header-->
     <header>
-        <nav class="navbar navbar-light fixed-top estandar">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">
-                    <img src="./img/armav1.png" alt="Armav"  class="d-inline-block align-text-top">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a href="./index.html" class="navbar-brand">
+                    <img src="./img/header/armav-logo.png" alt="Armav">
                 </a>
-                <div class="header__nav">
-                    <ul>
-                        <li><a href="./index.html" class="active">Inicio</a></li>
-                        <li><a href="./html/ing-y-diseño.html">Ingeniería y Diseño</a></li>
-                        <li><a href="./html/obras.html">Obras</a></li>
-                        <li><a href="./html/sobre-nosotros.html">Sobre Nosotros</a></li>
-                        <li><a href="./html/contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <nav class="navbar navbar-light fixed-top responsive">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="./">
-                    <img src="./img/armav.png" alt="Armav">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button"
+                data-bs-toggle="offcanvas" 
+                data-bs-target="#navbarOffcanvas"
+                aria-controls="navbarOffcanvas"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <img src="./img/header/menu.png" alt="Menu hamburguesa">
                 </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas offcanvas-end" id="navbarOffcanvas"
+                tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Armav S.A</h5>
                         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    <div class="offcanvas-body">
+                    <div class="offcanvas-body header-nav">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="active" aria-current="page" href="../index.html">Inicio</a>
+                                <a class="active" aria-current="page" href="./index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a href="./html/ing-y-diseño.html">Ingeniería y Diseño</a>
+                                <a href="./pages/ing-y-diseño.html">Ingeniería y Diseño</a>
                             </li>
                             <li class="nav-item">
-                                <a href="./html/obras.html">Obras</a>
+                                <a href="./pages/obras.html">Obras</a>
                             </li>
                             <li class="nav-item">
-                                <a href="./html/sobre-nosotros.html">Sobre Nosotros</a>
+                                <a href="./pages/sobre-nosotros.html">Sobre Nosotros</a>
                             </li>
                             <li class="nav-item">
-                                <a href="./html/contacto.html">Contacto</a>
+                                <a href="./pages/contacto.html">Contacto</a>
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div>  
             </div>
         </nav>
     </header>
@@ -78,39 +70,39 @@
         <!--Ingeniería y Diseño-->
         <div class="home-ing-y-diseño">
             <div class="home-ing-y-diseño__img">
-                <img src="img/home-ing-y-diseño.jpg" alt="Ingeniería y Diseño">
+                <img src="img/home/ing-y-diseño.jpg" alt="Ingeniería y Diseño">
             </div>
             <div class="home-ing-y-diseño__container">
                 <h2 data-aos="fade-up" class="home-ing-y-diseño__titulo">Ingeniería y Diseño</h2>
                 <p data-aos="fade-up" class="home-ing-y-diseño__descripcion">La vista exclusiva de un edificio, su estilo único y distintivo, se aprecia en su diseño exterior.
                 </p>
                 <div class="buttom ">
-                    <a href="./html/ing-y-diseño.html">Ver más</a>
+                    <a class="style-btn" href="./pages/ing-y-diseño.html">Ver más</a>
                 </div>
             </div>
         </div>
         <div class="home-contenido-adicional">
             <div class="home-contenido-adicional__info">
-                <img src="img/home-maquetas.jpg" alt="Ensayos, prototipos y maquetas">
+                <img src="img/home/maquetas.jpg" alt="Ensayos, prototipos y maquetas">
                 <h3 class="info__titulo">Ensayos, prototipos y maquetas</h3>
                 <p class="info__descripcion">El desarrollo de la maqueta de las carpinterías de aluminio, curtain wall y window wall da la primera impresión del diseño y permite evaluar cómo funcionan las formas, pudiendo apreciar el color de los vidrios, su translucidez y reflejos, definiendo los materiales a utilizar.</p>
                 <div class="buttom">
-                    <a href="./html/ing-y-diseño.html">Leer más sobre ensayos, prototipos y maquetas</a>
+                    <a href="./pages/ing-y-diseño.html">Leer más sobre ensayos, prototipos y maquetas</a>
                 </div>
             </div>
             <div class="home-contenido-adicional__info">
-                <img src="img/home-fabricacion.jpg" alt="Fabricación y montaje">
+                <img src="img/home/fabricacion.jpg" alt="Fabricación y montaje">
                 <h3 class="info__titulo">Fabricación y montaje</h3>
                 <p class="info__descripcion">Conozca nuestras dos plantas integradas con la más avanzanda tecnología. Tenemos la posibilidad de flexibilizar las líneas de producción y montaje a los efectos de adaptarlas a los requisitos específicos de su proyecto.</p>
                 <div class="buttom">
-                    <a href="./html/ing-y-diseño.html">Leer más sobre fabricación y montaje</a>
+                    <a href="./pages/ing-y-diseño.html">Leer más sobre fabricación y montaje</a>
                 </div>
             </div>
         </div>
         <!--Obras-->
         <div class="home-obras">
             <div class="home-obras__img">
-                <img src="img/home-obras.jpg" alt="Obras">
+                <img src="img/home/obras.jpg" alt="Obras">
             </div>
             <div class="home-obras__container">
                 <h4 data-aos="fade-up" class="home-obras__titulo">Obras</h4>
@@ -131,7 +123,7 @@
                 <!--Grid column-->
                 <div class="col-lg-6 col-md-12 mb-4 mb-md-0 logo">
                     <h5 class="logo__icono">Armav S.A</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quismolestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquamvoluptatem veniam, est atque cumque eum delectus sint!
+                    <p>Armav S.A es una empresa argentina integrada por diseñadores, planificadores, ingenieros, consultores y especialistas técnicos, que trabajan en todos los aspectos de los proyectos.
                     </p>
                 </div>
                 <!--Grid column-->
@@ -187,8 +179,8 @@
         </div>
         <!-- Grid container -->
         <!-- Copyright -->
-        <div class="text-center p-3 copyright">© 2022 Copyright:
-            <a class="text-white" href="#">Armav.com</a>
+        <div class="text-center p-3 copyright d-flex justify-content-center">
+            <p>© 2022 Copyright: <a class="text-white" href="./index.html">Armav.com</a></p>
         </div>
         <!-- Copyright -->
     </footer>

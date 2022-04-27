@@ -1,0 +1,165 @@
+@mixin font($font-family, $font-size, $font-weight) {
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight;
+}
+.style-btn {
+    text-decoration: none;
+    color: #ffffff;
+    @include font('Poppins', 1em, lighter);
+    display: inline-block;
+    background-color:#487a99;
+    padding: 10px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 4px 4px 4px #303030;
+}
+/* Comienza el Home */
+/* Home - Imagen de fondo */
+.fondo-home {
+    background-image: linear-gradient(#00000080, #00000080), url(../img/home/fondo.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 200px;
+    .fondo-home__slogan {
+        text-transform: uppercase;
+        color:#ffffff;
+        letter-spacing: 3px;
+        padding: 0px 30px;
+        @include font('Poppins', 3.5em, 300);
+    }
+}
+.home-contenido-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    // Home - Ingeniería y Diseño //
+    .home-ing-y-diseño {
+        display: flex;
+        margin-bottom: 200px;
+        padding: 0px 70px;
+        .home-ing-y-diseño__img {
+            width: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .home-ing-y-diseño__container {
+            width: 30%;
+            background-color:#1f1f1f;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 5%;
+            .home-ing-y-diseño__titulo {
+                text-transform: uppercase;
+                letter-spacing: 1.3px;
+                color:#487a99;
+                @include font('Poppins', 1.9em, lighter);
+            }
+            .home-ing-y-diseño__descripcion {
+                line-height: 2;
+                color: #faebd7;
+                @include font(None, 1.5em, None);
+            }
+            .buttom {
+                padding: 20px 0px;
+                margin-top: 10px;
+                a {
+                    @extend .style-btn;
+                }
+                .style-btn:hover {
+                    transform: scale(1.03, 1.03);
+                    transition: all .5s;
+                }
+            }
+        }
+    }
+    // Home - Contenido Adicional //
+    .home-contenido-adicional {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 70px;
+        margin-bottom: 150px;
+        .home-contenido-adicional__info {
+            display: flex;
+            flex-direction: column;
+            width: 48%;
+            img {
+                width: 100%;
+                height: 55%;
+            }
+            .info__titulo {
+                padding: 10px 0px;
+                text-transform: uppercase;
+                color:#023C6D;
+                @include font('Poppins', 1.4em, 600);
+            }
+            .info__descripcion {
+                line-height: 1.8;
+                @include font('Poppins', 1.05em, lighter);
+            }
+            .buttom {
+                padding: 20px 0px;
+                margin-top: 10px;
+                a {
+                    @extend .style-btn;
+                    background-color:#1b854a;
+                }
+                a:hover {
+                    transform: scale(1.03, 1.03);
+                    transition: all .5s;
+                }
+            }
+        }
+    }
+    // Home - Obras //
+    .home-obras {
+        display: flex;
+        margin-bottom: 200px;
+        padding: 0px 70px;
+        .home-obras__img {
+            width: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .home-obras__container {
+            width: 30%;
+            background-color: #1f1f1f;
+            display: flex;
+            flex-direction: column;
+            padding: 5%;
+            .home-obras__titulo {
+                text-transform: uppercase;
+                @include font('Poppins', 2em, lighter);
+                padding: 30px 0px;
+                color:#487a99;
+            }
+            .home-obras__descripcion {
+                line-height: 1.8;
+                font-size: 1.85em;
+                @include font(None, 1.85em, None);
+                padding-bottom: 25px;
+                color:#faebd7;
+            }
+            .buttom {
+                padding: 20px 0px;
+                margin-top: 10px;
+                a {
+                    @extend .style-btn;
+                }
+                a:hover {
+                    transform: scale(1.03, 1.03);
+                    transition: all .5s;
+                }
+            }
+        }
+    }
+}

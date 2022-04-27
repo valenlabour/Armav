@@ -1,0 +1,55 @@
+/* Comienza Obras */
+.obras {
+    // Obras - Sección //
+    .seccion {
+        background-color:#023C6D;
+        height: auto;
+        padding: 60px;
+        text-align: center;
+        .seccion__nombre {
+            color:#DFEAEF;
+            font-weight: 500;
+            font-family: 'Forum', cursive;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+    }
+    // Obras - Galería //
+    .obras-galeria {
+        background-color:#ffffff;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(5, 1fr);
+        padding-top: 50px;
+        .obras-galeria__obra {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            img {
+                object-fit: cover;
+                width: 75%;
+            }
+            img:hover {
+                transition: .7s;
+                transform: scale(1.01, 1.01);
+            }
+            .obra__descripcion {
+                .obra__nombre {
+                    font-family: 'Poppins', sans-serif;
+                    text-transform: uppercase;
+                    color:#2c6775;
+                    font-size: 2.3em;
+                    font-weight: 500;
+                    padding-top: 20px;
+                }
+                .obra__direccion {
+                    font-family: Barlow;
+                    font-size: 1.75em;
+                    color:#023C6D;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+}

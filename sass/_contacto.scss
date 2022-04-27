@@ -1,0 +1,144 @@
+/* Comienza Contacto */
+.contacto {
+    // Contacto - Sección //
+    .seccion {
+        background-color:#023C6D;
+        height: auto;
+        padding: 60px;
+        text-align: center;
+        .seccion__nombre {
+            color:#DFEAEF;
+            font-weight: 500;
+            font-family: 'Forum', cursive;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+    }
+    // Contacto - Contenido Principal //
+    .contacto__contenido-principal {
+        background-image: linear-gradient(
+            #00000080, 
+            #00000080
+          ), url(../img/contacto/fondo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:bottom;
+        display: flex;
+        margin-bottom: 50px;
+        justify-content: space-evenly;
+        align-items: center;
+        /* Contacto - Datos Contacto */
+        .contenido-principal__datos-contacto {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            .datos-contacto__titulo {
+                font-size: 2em;
+                font-weight: 500;
+                color:#ffffff;
+                text-transform: uppercase;
+                padding-top: 30px;
+            }
+            .datos-contacto__info {
+                padding: 30px 0px;
+                display: flex;
+                align-items: center;
+                svg {
+                    color: #ffffff;
+                }
+                .info__titulo {
+                    font-size: 1.1em;
+                    font-weight: 500;
+                    color:#ffffff;
+                    text-transform: uppercase;
+                    margin: 0px;
+                    padding-left: 10px;
+                }
+            }
+            .info__descripcion {
+                ul {
+                    padding: 0px;
+                    li {
+                        font-family: 'Forum', cursive;
+                        list-style: none;
+                        font-size: 1.8em;
+                        color:#ffffff;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+        // Contacto - Mapa //
+        .contenido-principal__mapa {
+            width: 40%;
+            iframe {
+                width: 100%;
+            }
+        }
+    }
+    // Contacto - Formulario de Contacto //
+    .contacto__container-form {
+        display: flex;
+        flex-direction: column;
+        padding: 0% 20%;
+        margin-bottom: 30px;
+        width: 100%;
+        .container-form__titulo {
+            font-size: 2em;
+            font-weight: 500;
+            color:#023C6D;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+        .container-form__form {
+            display: flex;
+            flex-direction: column;
+            .form__seccion {
+                display: flex;
+                flex-direction: column;
+                padding: 20px 0px;
+                .form__titulo {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 1.1em;
+                    font-weight: 500;
+                    padding-bottom: 5px;
+                    color:#023C6D;
+                    text-transform: uppercase;
+                }
+                .form__texto {
+                    padding: 10px 15px;
+                    font-size: 1em;
+                    font-family: 'Poppins', sans-serif;
+                    letter-spacing: 1.5px;
+                    border: 1px solid #023C6D;
+                }
+                textarea {
+                    resize: vertical;
+                    padding: 10px;
+                    min-height: 250px;
+                }
+            }
+            .buttom {
+                input {
+                    text-decoration: none;
+                    color: #ffffff;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 1em;
+                    font-weight: lighter;
+                    display: inline;
+                    background-color:#159fc2;
+                    padding: 10px 30px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    border: none;
+                    box-shadow: 2px 2px 2px #303030;
+                }
+                input:hover {
+                    background-color:#159fc2;
+                    transform: scale(1.1, 1.1);
+                    transition: all .5s;
+                }
+            }
+        }
+    }
+}
