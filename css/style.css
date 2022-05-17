@@ -27,17 +27,20 @@
     text-transform: uppercase;
 }
 .nav-item a:hover {
-    color:#359ac9;
+    color:#77a5bb;
 }
 /* FOOTER */
 .footer {
-    background-color:#023C6D;
+    background-color:#073d69;
+}
+.row {
+    padding: 70px 0px;
 }
 .logo__icono {
     font-family: 'League Gothic', sans-serif;
     font-size: 6em;
     padding: 25px 0px;
-    color:#1f1f1f;
+    color:#ffffff;
 }
 .redes-sociales {
     margin-top: 40px;
@@ -47,7 +50,7 @@
     color:#ffffff;
 }
 .redes-sociales a:hover {
-    color:#141414;
+    color:#5eb7e0;
 }
 .redes-sociales a svg {
     padding: 10px;
@@ -57,16 +60,15 @@
 .info .info__seccion {
     font-size: 1.4em;
     padding-bottom: 10px;
-    color:#1f1f1f;
-    font-weight: 500;
+    color:#ffffff;
+    font-weight: 300;
     text-transform: uppercase;
 }
 .info ul li {
     list-style: none;
-    color:#1f1f1f;
     padding: 10px 0px;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 300;
 }
 .info ul li a {
@@ -74,8 +76,7 @@
     color: #faebd7;
 }
 .info ul li a:hover {
-    color:#141414;
-    font-weight: 500;
+    color:#5eb7e0;
 }
 .copyright {
     background-color: #1f1f1f;
@@ -250,6 +251,10 @@
     flex-direction: row;
     align-items: center;    
 }
+.ing-y-diseño__info ul div svg {
+    width: 16px;
+    height: 16px;
+}
 .ing-y-diseño__info ul div li {
     list-style: none;
     font-family: 'Poppins', sans-serif;
@@ -319,10 +324,10 @@
 }
 .sobre-nosotros__info .info__texto {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.2em;
+    font-size: 1.05em;
     font-weight: lighter;
     line-height: 2;
-    padding: 0px 200px;
+    padding: 0px 300px;
     margin-bottom: 70px;
     color: #ffffff;
 }
@@ -506,6 +511,10 @@
     .nav-item a {
         font-size: .92em;
     }
+    /* SOBRE NOSOTROS */
+    .sobre-nosotros__info .info__texto {
+        padding: 0px 150px;
+    }
 }
 @media (min-width: 900px) and (max-width: 1023px) {
     /* HEADER */
@@ -515,6 +524,9 @@
     /* FOOTER */
     .logo__icono {
         font-size: 5em;
+    }
+    .redes-sociales {
+        margin-bottom: 30px;
     }
     .info h5 {
         font-size: 1.2em;
@@ -545,6 +557,9 @@
     .ing-y-diseño__texto {
         font-size: .9em;
     }
+    .sobre-nosotros__info .info__texto {
+        padding: 0px 130px;
+    }
     /* CONTACTO */
     .datos-contacto__info .info__titulo {
         font-size: 1em;
@@ -566,6 +581,9 @@
     /* FOOTER */
     .logo__icono {
         font-size: 4.5em;
+    }
+    .redes-sociales {
+        margin-bottom: 30px;
     }
     .info h5 {
         font-size: 1em;
@@ -744,7 +762,7 @@
     .navbar .container {
         flex-wrap: nowrap;
     }
-    .container a img {
+    .container .navbar-brand img {
         width: 90%;
         height: 90%;   
     }
@@ -802,14 +820,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* SECCION */
 .seccion {
-    background-color:#023C6D;
+    background-color:#073d69;
     height: auto;
     padding: 60px;
     margin-top: 70px;
     text-align: center;
 }
 .seccion__nombre {
-    color:#DFEAEF;
+    color:#ffffff;
     font-weight: 500;
     font-family: 'Forum', cursive;
     text-transform: uppercase;
